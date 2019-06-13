@@ -4,16 +4,20 @@
   <button (click)="addKeg(name)">Done!</button>
 </form> -->
 
-<div *ngFor="let currentKeg of kegs">
-  <h2 (click)="showInfo(currentKeg)">{{currentKeg.name}}</h2>
-  <div *ngIf="currentKeg === selectedKeg">
-    <h3>{{currentKeg.brand}}</h3>
-    <h3>${{currentKeg.price}}</h3>
-    <h3>{{currentKeg.alcoholContent}}%</h3>
+  <div *ngFor="let currentKeg of childKegList">
+    <h2 (click)="editInfo(currentKeg)">{{currentKeg.name}}</h2>
   </div>
-</div>
 
-<form>
+
+
+<!--   
+  <div>
+    <button (click)="">Add a Beer</button>
+  </div> -->
+
+
+
+<!-- <form>
   <label>Enter Name: </label>
   <input type="text" [(ngModel)]="selectedKeg.name" name="name" placeholder="Now On Tap!" required>{{newBeer}}<br><br>
   <label>Enter Brand: </label>
@@ -24,4 +28,5 @@
   <input type="number" [(ngModel)]="selectedKeg.alcoholContent" name="alcoholContent" placeholder="AVB!" required>{{newBeer}}<br><br>
   <button (click)="addKeg(selectedKeg.name, selectedKeg.brand, selectedKeg.price, selectedKeg.alcoholContent)">Add/Edit Keg</button>
   <button (click)="clearBeer()">Clear Selection</button>
-</form>
+</form> -->
+

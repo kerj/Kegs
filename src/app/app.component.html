@@ -1,6 +1,11 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <div style="text-align:center">
   <h1>{{ title }}</h1>
-  <app-keg></app-keg>
-
+  <div *ngIf="list === true">
+    <app-keg [childKegList]="masterKegList" (clickSender)="edit($event)"></app-keg>
+  </div>
+  <div *ngIf="selectedKeg">
+    <app-edit-info [childSelectedKeg]="selectedKeg" (clickedDone)="finished()"></app-edit-info>
+  </div>
+</div>
 

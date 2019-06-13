@@ -1,0 +1,18 @@
+
+  <h3>{{childSelectedKeg.name}}</h3>
+  <h3>{{childSelectedKeg.brand}}</h3>
+  <h3>${{childSelectedKeg.price}}</h3>
+  <h3>{{childSelectedKeg.alcoholContent}}%</h3>
+  <label>Edit Name: </label>
+  <input type="text" [(ngModel)]="childSelectedKeg.name" name="name" placeholder="Now On Tap!"
+    required>{{newBeer}}<br><br>
+  <label>Edit Brand: </label>
+  <input type="text" [(ngModel)]="childSelectedKeg.brand" name="brand" placeholder="brand!" required>{{newBeer}}<br><br>
+  <label>Edit Price: </label>
+  <input type="number" [(ngModel)]="childSelectedKeg.price" name="price" placeholder="price per keg!"
+    required>{{newBeer}}<br><br>
+  <label>Edit ABV: </label>
+  <input type="number" [(ngModel)]="childSelectedKeg.alcoholContent" name="alcoholContent" placeholder="AVB!"
+    required>{{newBeer}}<br><br>
+  <!-- <button (click)="addKeg(selectedKeg.name, selectedKeg.brand, selectedKeg.price, selectedKeg.alcoholContent)">Add/Edit Keg</button> -->
+  <button (click)="editing()">Edit Beer</button>

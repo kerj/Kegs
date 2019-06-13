@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { KegComponent } from './keg/keg.component';
 import { DetailsComponent } from './details/details.component';
 import { FormsModule }  from '@angular/forms';
+import { EditInfoComponent } from './edit-info/edit-info.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     KegComponent,
-    DetailsComponent
+    DetailsComponent,
+    EditInfoComponent
   ],
   imports: [
     BrowserModule,
@@ -22,3 +24,4 @@ import { FormsModule }  from '@angular/forms';
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
