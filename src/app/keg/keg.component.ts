@@ -18,29 +18,7 @@ export class KegComponent {
 //   new Keg('Coors Light', 'Coors', 50, 4.5 )
 //   ];
   
-  // newBeer = null;
 
-//  addKeg(newKeg, newBrand, newPrice, newAlcohol){
-//   //  if(this.kegs.length ) {
-//   let length = this.childKegList.length;
-//   //  }
-//   //  this.kegs.splice(this.keg,1)
-//   let newLager = new Keg(newKeg, newBrand, newPrice, newAlcohol);
-//   this.newBeer =  this.childKegList.push(newLager);
-  
-//   if(this.newBeer <= length+1){
-//     this.childKegList.splice((this.newBeer-length-1),1);
-//     console.log(this.childKegList);
-    
-//   }
-//   console.log(this.childKegList);
-  
-//    this.clearBeer();
-//  }
-
-//  clearBeer() {
-//    this.newBeer = null;
-//  }
 
 //  editInfo(editBeer) {
 //    console.log(editBeer);
@@ -53,6 +31,10 @@ export class KegComponent {
 
 editInfo(beerToEdit: Keg) {
   this.clickSender.emit(beerToEdit);
+}
+
+add(){
+  this.clickSender.emit();
 }
  
 

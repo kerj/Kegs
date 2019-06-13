@@ -1,0 +1,15 @@
+<!-- <div>
+    <button (click)="addBeer()">Add a Beer</button>
+</div> -->
+
+<form>
+    <label>Enter Name: </label>
+    <input type="text" [(ngModel)]="name" name="name" placeholder="Now On Tap!" required>{{newBeer}}<br><br>
+    <label>Enter Brand: </label>
+    <input type="text" [(ngModel)]="brand" name="brand" placeholder="brand!" required>{{newBeer}}<br><br>
+    <label>Enter Price: </label>
+    <input type="number" [(ngModel)]="price" name="price" placeholder="price per keg!" required>{{newBeer}}<br><br>
+    <label>Enter ABV: </label>
+    <input type="number" [(ngModel)]="alcoholContent" name="alcoholContent" placeholder="AVB!" required>{{newBeer}}<br><br>
+    <button (click)="addKeg(name, brand, price, alcoholContent); addBeer()">Add/Edit Keg</button>
+  </form>
