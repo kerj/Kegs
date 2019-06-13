@@ -13,7 +13,7 @@ export class AddKegComponent{
   newBeer = null;
 
  addKeg(newKeg, newBrand, newPrice, newAlcohol){
-  let newDrink = new Keg(newKeg, newBrand, newPrice, newAlcohol);
+  let newDrink = new Keg(newKeg, newBrand, newPrice, newAlcohol, 100);
   this.childAddKegList.push(newDrink);
  }
 

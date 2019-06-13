@@ -7,7 +7,7 @@
   <div *ngIf="selectedKeg">
     <app-edit-info [childSelectedKeg]="selectedKeg" (clickedDone)="finished()"></app-edit-info>
   </div>
-  <div *ngIf="newBeer === false">
+  <div *ngIf="newBeer === false && !selectedKeg">
     <app-add-keg [childAddKegList]="masterKegList" (clickAdd)="add(); finished()"></app-add-keg>
   </div>
 </div>

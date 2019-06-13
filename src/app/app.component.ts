@@ -13,10 +13,10 @@ export class AppComponent {
   addButton = true;
   newBeer = true;
   masterKegList: Keg[] = [
-    new Keg('Christmas Ale', 'Great Lakes', 150, 8.7 ), 
-    new Keg('Blatz', 'Blatz Brewing', 120, 5 ),
-    new Keg('High Life', 'Miller', 130, 5 ),
-    new Keg('Coors Light', 'Coors', 50, 4.5 )
+    new Keg('Christmas Ale', 'Great Lakes', 150, 8.7, 100 ), 
+    new Keg('Blatz', 'Blatz Brewing', 120, 5, 100 ),
+    new Keg('High Life', 'Miller', 130, 5, 100 ),
+    new Keg('Coors Light', 'Coors', 50, 4.5, 100)
     ];
 
     finished() {
@@ -31,12 +31,9 @@ export class AppComponent {
       this.selectedKeg = item;
       this.list = false;
       this.addButton = false;
-      console.log(item);
     }
 
     add() {
-      console.log(this);
-      
       this.list = false;
       this.addButton = false;
       this.newBeer = false;
